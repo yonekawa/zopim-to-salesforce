@@ -1,0 +1,19 @@
+{
+   "manifest_version": 2,
+   "name": "Zopim to Salesforce",
+   "description": "Fast open customer info on salesforce from Zopim",
+   "version": "0.1",
+   "background": {
+     "scripts": []
+   },
+   "content_scripts": [
+     {
+        "matches": ["https://dashboard.zopim.com/*"],
+        "js": ["js/jquery.js", "js/open_salesforce.js"]
+     }
+   ],
+   "permissions": [
+     "https://dashboard.zopim.com/*",
+     "https://ap.salesforce.com/*"
+   ]
+}
